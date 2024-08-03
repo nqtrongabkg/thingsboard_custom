@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+if [ -e /var/run/tb-vc-executor/tb-vc-executor.pid ]; then
+    service tb-vc-executor stop
+fi
+
+exit 0

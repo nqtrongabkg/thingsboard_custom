@@ -1,0 +1,11 @@
+[Unit]
+Description=tb-monitoring
+After=syslog.target
+
+[Service]
+User=thingsboard
+ExecStart=/usr/share/tb-monitoring/bin/tb-monitoring.jar
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target

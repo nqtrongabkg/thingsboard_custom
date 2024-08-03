@@ -1,0 +1,10 @@
+#!/bin/sh
+
+mkdir -m 0755 -p /var/log/tb-vc-executor
+chown -R thingsboard: /var/log/tb-vc-executor
+chown -R thingsboard: /usr/share/tb-vc-executor
+
+if [ $1 -eq 1 ] ; then
+        # Initial installation
+        systemctl --no-reload enable tb-vc-executor.service >/dev/null 2>&1 || :
+fi

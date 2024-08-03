@@ -1,0 +1,11 @@
+[Unit]
+Description=tb-vc-executor
+After=syslog.target
+
+[Service]
+User=thingsboard
+ExecStart=/usr/share/tb-vc-executor/bin/tb-vc-executor.jar
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
