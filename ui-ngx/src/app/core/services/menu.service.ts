@@ -413,29 +413,29 @@ export class MenuService {
           }
         ]
       },
-      // {
-      //   id: 'profiles',
-      //   name: 'profiles.profiles',
-      //   type: 'toggle',
-      //   path: '/profiles',
-      //   icon: 'badge',
-      //   pages: [
-      //     {
-      //       id: 'device_profiles',
-      //       name: 'device-profile.device-profiles',
-      //       type: 'link',
-      //       path: '/profiles/deviceProfiles',
-      //       icon: 'mdi:alpha-d-box'
-      //     },
-      //     {
-      //       id: 'asset_profiles',
-      //       name: 'asset-profile.asset-profiles',
-      //       type: 'link',
-      //       path: '/profiles/assetProfiles',
-      //       icon: 'mdi:alpha-a-box'
-      //     }
-      //   ]
-      // },
+      {
+        id: 'profiles',
+        name: 'profiles.profiles',
+        type: 'toggle',
+        path: '/profiles',
+        icon: 'badge',
+        pages: [
+          {
+            id: 'device_profiles',
+            name: 'device-profile.device-profiles',
+            type: 'link',
+            path: '/profiles/deviceProfiles',
+            icon: 'mdi:alpha-d-box'
+          },
+          {
+            id: 'asset_profiles',
+            name: 'asset-profile.asset-profiles',
+            type: 'link',
+            path: '/profiles/assetProfiles',
+            icon: 'mdi:alpha-a-box'
+          }
+        ]
+      },
       {
         id: 'customers',
         name: 'customer.customers',
